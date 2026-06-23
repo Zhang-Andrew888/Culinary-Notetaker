@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "accounts",
+    "recipes",
+    "recipe_logs",
+    "cookbooks",
 ]
 
 REST_FRAMEWORK = {
