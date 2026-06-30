@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { recipes, logsByRecipe } from '../data.js';
-import ImageSlot from '../components/ImageSlot.jsx';
+import ImageSlot from '../components/molecules/ImageSlot.jsx';
 
 function formatDate(d) {
   return new Date(d + 'T00:00:00').toLocaleDateString('en-US', {

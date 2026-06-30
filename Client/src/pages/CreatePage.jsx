@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { recipes } from '../data.js';
-import ImageSlot from '../components/ImageSlot.jsx';
+import ImageSlot from '../components/molecules/ImageSlot.jsx';
 
 export default function CreatePage() {
   const [mode, setMode] = useState('recipe');
   return (
-    <div style={{ maxWidth: 660 }}>
+    <div className="create-page">
       <div className="toggle">
         <button
           className={'toggle__opt' + (mode === 'recipe' ? ' toggle__opt--active' : '')}

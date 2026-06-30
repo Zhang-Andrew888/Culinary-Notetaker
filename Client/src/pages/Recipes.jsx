@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { recipes } from '../data.js';
-import ImageSlot from '../components/ImageSlot.jsx';
+import ImageSlot from '../components/molecules/ImageSlot.jsx';
 
 export default function Recipes() {
   return (
@@ -10,8 +10,8 @@ export default function Recipes() {
         <span className="page-count">{recipes.length} recipes</span>
       </div>
 
-      <div className="grid-2">
-        {recipes.slice(0, 4).map((r) => (
+      <div className="grid-3">
+        {recipes.map((r) => (
           <Link key={r.id} to={`/recipes/${r.id}`} className="recipe-card">
             <ImageSlot id={`recipe-${r.id}`} height={152} radius={0} placeholder={r.dish_name} />
             <div className="recipe-card__body">
